@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run:  docker build -f src/main/docker/Dockerfile.multistage -t test:dev
+      run:  docker build -f src/main/docker/Dockerfile.multistage -t test:dev .
     - name: Check Image
       run: docker images| grep test:dev
