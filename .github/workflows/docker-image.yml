@@ -14,4 +14,4 @@ jobs:
     - name: Build the Docker image
       run:  docker build -f src/main/docker/Dockerfile.multistage -t test:dev .
     - name: Check Image
-      run: docker images| grep test:dev
+      run: docker images
